@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero
+{
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+}

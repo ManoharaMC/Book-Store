@@ -1,0 +1,229 @@
+@import url("./fontawesome-free-5.15.2-web/css/all.css");
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  height: 200px;
+  width: 100%;
+  font-family: montserrat;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+}
+.container {
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: white;
+  font-size: 23px;
+  line-height: 64px;
+  padding: 0 100px;
+  font-weight: bolder;
+}
+.container ul {
+  float: right;
+  margin-right: 148px;
+}
+.container ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+.container ul li a {
+  color: white;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+
+a.active,
+a:hover {
+  background: -webkit-linear-gradient(left, #fff);
+  transition: 0.5s;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  .container ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .container ul li a {
+    font-size: 20px;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+.home {
+  height: calc(100vh - 3rem);
+  row-gap: 1rem;
+}
+.home__data {
+  /* color: #fff; */
+  font-family: sans-serif;
+  margin: 50px !important;
+  font-weight: 200px;
+  font-size: 28px;
+  color: #fff;
+}
+.home__social-icon {
+  margin: 7px !important;
+  color: #fff;
+  font-family: "Font Awesome 5 Brands";
+}
+button {
+  margin: 10px;
+  height: 50px;
+  width: 80px;
+  border-radius: 15px;
+  background: -webkit-linear-gradient(left, #a445b2, #fa4299);
+}
+.about {
+  row-gap: 2rem;
+  text-align: center;
+  background-color: blue;
+}
+.about__subtitle {
+}
+.about__img {
+  justify-self: center;
+}
+.about__img img {
+  position: relative;
+  /* margin: 20px auto; */
+  width: 91px;
+  border-radius: 100px;
+  right: -6px;
+  height: 83px;
+}
+.contact {
+  width: 100%;
+  height: 310px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-weight: var(--font-semi);
+  padding: 2rem 0;
+}
+.footer__title {
+  font-size: 2rem;
+  margin-bottom: var(--mb-4);
+}
+.footer__social {
+  margin-bottom: var(--mb-4);
+}
+.footer__icon {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0 var(--mb-2);
+}
+.contact ul li {
+  list-style: none;
+  display: inline;
+}
+.contact ul li a {
+  color: #fff;
+  font-size: 20px;
+  margin: 6px !important;
+}
+.contact ul li a::after {
+  line-height: 20px;
+  color: #fff;
+}
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 14px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  height: 219px;
+  background-color: white;
+  padding: 10px;
+  width: 271px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:700px)
+{
+  .content {
+    margin-left: 50px;
+    width: 80%;
+    height:50% ;
+  } 
+}
